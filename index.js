@@ -154,10 +154,10 @@ export default class AutoGitUpdate {
  * The backup is stored in the configured tempLocation. Only one backup is kept at a time. 
  */
 async function backupApp() {
-    let destination = path.join(config.tempLocation, backupSubdirectory);
-    log.detail('Auto Git Update - Backing up app to ' + destination);
-    await fs.ensureDir(destination);
-    await fs.copy(appRootPath.path, destination, {dereference: true});
+    // let destination = path.join(config.tempLocation, backupSubdirectory);
+    // log.detail('Auto Git Update - Backing up app to ' + destination);
+    // await fs.ensureDir(destination);
+    // await fs.copy(appRootPath.path, destination, {dereference: true});
     return true;
 }
 
